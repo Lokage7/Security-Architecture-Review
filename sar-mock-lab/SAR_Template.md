@@ -88,8 +88,13 @@ This diagram shows the high-level architecture of the web application, including
 
 ---
 
-## Risk Register Link
-The detailed risk register is available [here](https://github.com/Lokage7/Security-Architecture-Review/blob/main/sar-mock-lab/risk_register.csv). All findings above correspond to the IDs in the CSV.
+## Risk Register
+
+| ID | Resource | Description | Likelihood (1-5) | Impact (1-5) | Risk Score | Business Impact | Recommendation | Owner | Status | Target Date |
+|----|----------|-------------|-----------------|---------------|------------|-----------------|----------------|-------|--------|-------------|
+| 1  | s3://app-logs | Publicly readable bucket found during scan | 3 | 4 | 12 | Potential data exposure and compliance risk if logs contain sensitive information | Restrict public access with bucket policies; enable default encryption with AWS KMS; enable access logging and forward to SIEM; enforce compliance via AWS Config rules and Service Control Policies | CloudOps | Open | 2025-12-15 |
+| 2  | iam:AdminPolicy | Overly permissive admin-like policy attached to dev role | 4 | 5 | 20 | High potential for privilege escalation and unauthorized data access | Apply least privilege; implement permission boundaries; continuously monitor with IAM Access Analyzer; configure automated alerts via Security Hub; enforce baseline IAM policies with Terraform or CloudFormation | IAM Team | Open | 2025-12-01 |
+| 3  | cloudtrail | CloudTrail not configured in all regions | 2 | 4 | 8 | Incomplete audit trail could hinder incident response and regulatory compliance | Enable CloudTrail in all regions and centralize logs to dedicated logging account; enable log file integrity validation; implement automated alerts with CloudWatch/Security Hub; integrate logs into SIEM for continuous monitoring; enforce compliance via AWS Config rules | SecurityOps | Open | 2025-11-30 |
 
 ---
 
