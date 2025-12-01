@@ -1,0 +1,4 @@
+id,resource,description,likelihood(1-5),impact(1-5),risk_score(1-25),business_impact,recommendation,owner,status,target_date
+1,s3://app-logs,Publicly readable bucket found during scan,3,4,12,"Potential data exposure; compliance risk","Set bucket policy to private; enable bucket encryption; enable access logging",CloudOps,Open,2025-12-15
+2,iam:AdminPolicy,Overly permissive admin-like policy attached to dev role,4,5,20,"Potential for privilege escalation and data exfiltration","Apply least privilege; create scoped roles; implement permission boundaries",IAM Team,Open,2025-12-01
+3,cloudtrail,CloudTrail not configured in all regions,2,4,8,"Gaps in audit logging may hinder incident response","Enable CloudTrail in all regions and centralize to logging account",SecurityOps,Open,2025-11-30
