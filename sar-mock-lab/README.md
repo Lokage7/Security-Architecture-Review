@@ -8,7 +8,7 @@ This repository demonstrates a mock Security Architecture Review (SAR) for an AW
 
 ## Contents
 - **SAR.md** – Full Security Architecture Review report with findings, recommendations, and remediation plan.  
-- **risk_register.csv** – Sample risk register with quantified risks and GRC engineering-focused recommendations.  
+- **risk_register.csv** – For Download and Automation purposes.   
 - **ARCHITECTURE.png** – High-level architecture diagram showing system components, trust boundaries, and data flows.  
 - **LICENSE** – Repository license (MIT recommended).
 
