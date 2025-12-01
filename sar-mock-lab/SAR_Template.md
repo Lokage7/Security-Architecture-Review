@@ -20,7 +20,7 @@ These findings highlight the importance of enforcing least privilege, securing d
 ---
 
 ## Architecture Overview
-![Architecture Diagram](ARCHITECTURE.png)  
+![AWS Architecture](ARCHITECTURE.png)
 This diagram shows the high-level architecture of the web application, including user access paths, network zones, and AWS services in scope. Trust boundaries were identified around S3 buckets, IAM roles, and logging infrastructure. Data flows were mapped to understand potential attack surfaces and high-risk areas.
 
 ---
