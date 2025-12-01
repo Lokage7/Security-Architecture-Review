@@ -1,19 +1,19 @@
-# Security Architecture Review (SAR) Project
+# Mock Security Architecture Review (SAR) Project
 
 **Author:** Sharaden Cole  
-**Date:** 2025-11-30  
+**Date:** 11-30-2025
 
 ## Overview
-This repository demonstrates a mock Security Architecture Review (SAR) for an AWS-hosted web application. The goal of this lab is to practice GRC Engineering concepts including risk identification, quantification, and automated monitoring.
+This repository demonstrates a mock Security Architecture Review (SAR) for an AWS-hosted web application. The lab practices GRC Engineering concepts including risk identification, quantification, continuous monitoring, and automated remediation.
 
 ## Contents
-- **SAR.md** – Full Security Architecture Review report with findings, recommendations, and remediation plan.
-- **risk_register_example.csv** – Sample risk register used to track and quantify risks.
-- **ARCHITECTURE.png** – High-level architecture diagram of the system.
+- **SAR.md** – Full Security Architecture Review report with findings, recommendations, and remediation plan.  
+- **risk_register.csv** – Sample risk register with quantified risks and GRC engineering-focused recommendations.  
+- **ARCHITECTURE.png** – High-level architecture diagram showing system components, trust boundaries, and data flows.  
 - **LICENSE** – Repository license (MIT recommended).
 
 ## Objectives
-- Identify high-risk areas in a cloud environment (S3, IAM, CloudTrail).  
-- Apply GRC Engineering best practices: automation, continuous monitoring, and enforceable policies.  
-- Quantify risk for prioritization and actionable remediation.  
+- Identify high-risk areas in AWS-hosted web application (S3, IAM, CloudTrail).  
+- Apply technical GRC controls and automation to mitigate risks.  
+- Quantify risks to prioritize remediation efforts.  
 - Demonstrate SAR documentation and structured risk management.
