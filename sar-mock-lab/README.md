@@ -1,33 +1,19 @@
-# SAR Mock Lab - Governance, Risk & Compliance (GRC) Interview Prep
-**Author:** Sharaden Cole
-**Purpose:** Step-by-step lab to simulate a Security Architecture Review (SAR) and maintain a Cybersecurity Risk Register. Use this repo to reference during interviews, reproduce the lab, and expand into a portfolio project.
+# Security Architecture Review (SAR) Project
+
+**Author:** Sharaden Cole  
+**Date:** 2025-11-30  
 
 ## Overview
-This lab walks through a mock SAR on an AWS-hosted application. It follows a realistic process you can present in interviews:
-1. Define scope
-2. Map architecture (data flows & trust boundaries)
-3. Identify assets, threats, and quantify risk
-4. Review and test security controls
-5. Document findings (SAR deliverable & risk register)
-6. Provide remediation recommendations
-7. Reflect on business impact and next steps
-
-The repo includes templates, example findings, scripts (audit checklist examples), and a SAR report template you can point to during interviews.
+This repository demonstrates a mock Security Architecture Review (SAR) for an AWS-hosted web application. The goal of this lab is to practice GRC Engineering concepts including risk identification, quantification, and automated monitoring.
 
 ## Contents
-- `README.md` - this file
-- `SAR_Template.md` - SAR report template
-- `risk_register_example.csv` - example risk register
-- `findings/` - example findings and remediation notes
-- `scripts/aws_audit_checks.py` - example local script with AWS CLI checks (safe, non-destructive commands)
-- `ARCHITECTURE.md` - high level architecture diagram and notes
-- `LICENSE` - MIT
+- **SAR.md** – Full Security Architecture Review report with findings, recommendations, and remediation plan.
+- **risk_register_example.csv** – Sample risk register used to track and quantify risks.
+- **ARCHITECTURE.png** – High-level architecture diagram of the system.
+- **LICENSE** – Repository license (MIT recommended).
 
-## How to use
-1. Clone locally or download the zip.
-2. Update `ARCHITECTURE.md` with your system diagram and notes.
-3. Run non-destructive audit commands locally (see `scripts/aws_audit_checks.py` and README guidance).
-4. Populate `risk_register_example.csv` with your prioritized findings.
-5. Use `SAR_Template.md` to assemble a short SAR deliverable for interviews.
-
-**Note:** This lab is intentionally environment-agnostic. Do not run destructive scripts against production systems. Replace example resource names with sandbox/test accounts when practicing.
+## Objectives
+- Identify high-risk areas in a cloud environment (S3, IAM, CloudTrail).  
+- Apply GRC Engineering best practices: automation, continuous monitoring, and enforceable policies.  
+- Quantify risk for prioritization and actionable remediation.  
+- Demonstrate SAR documentation and structured risk management.
