@@ -89,7 +89,7 @@ This diagram shows the high-level architecture of the web application, including
 ---
 
 ## Risk Register Link
-The detailed risk register is available [here](risk_register_example.csv). All findings above correspond to the IDs in the CSV.
+The detailed risk register is available [here](https://github.com/Lokage7/Security-Architecture-Review/blob/main/sar-mock-lab/risk_register.csv). All findings above correspond to the IDs in the CSV.
 
 ---
 
