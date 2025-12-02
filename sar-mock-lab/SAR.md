@@ -62,7 +62,7 @@ This diagram shows the high-level architecture of the web application, including
 - **Impact:** 5  
 - **Risk Score:** 20  
 - **Business Impact:** High potential for privilege escalation and data exfiltration  
-- **Recommendation (GRC Engineering):**  
+- **Recommendation:**  
   - Apply least privilege to all roles and enforce permission boundaries.  
   - Use IAM Access Analyzer and Security Hub for continuous monitoring of risky policies.  
   - Automate alerts for newly created or updated policies exceeding defined risk thresholds.  
@@ -79,7 +79,7 @@ This diagram shows the high-level architecture of the web application, including
 - **Impact:** 4  
 - **Risk Score:** 8  
 - **Business Impact:** Incomplete audit trail could hinder incident response and regulatory compliance  
-- **Recommendation (GRC Engineering):**  
+- **Recommendation:**  
   - Enable CloudTrail in all regions and centralize logs to a dedicated logging account.  
   - Enable log file integrity validation and multi-region trails.  
   - Integrate automated alerts via CloudWatch or Security Hub if logging stops or fails.  
