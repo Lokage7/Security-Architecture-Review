@@ -45,7 +45,7 @@ This diagram shows the high-level architecture of the web application, including
 - **Impact:** 4  
 - **Risk Score:** 12  
 - **Business Impact:** Potential data exposure and compliance risk if logs contain sensitive information  
-- **Recommendation (GRC Engineering):**  
+- **Recommendation:**  
   - Enforce S3 bucket policies to block public access.  
   - Enable default bucket encryption using AWS KMS.  
   - Enable S3 access logging and centralize logs in SIEM (Security Hub/CloudWatch Logs).  
